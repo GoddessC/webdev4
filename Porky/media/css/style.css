@@ -1,0 +1,772 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+
+body{
+	margin: 0;
+	font-family: "Gill Sans", Calibri, sans-serif;
+}
+
+header, nav,footer{
+	width: 100%;
+	text-align: center;	
+}
+
+header, footer{
+	background: #f4614c;
+	padding: 2%;
+}
+
+	header{
+		height: 320px;
+	}
+
+	header img{
+		position: relative;
+		top: .5em;
+		left: 5em;
+	}
+
+	header p{
+		float: right;
+		position: relative;
+		top: 10em;
+		left: 4.8em;
+		font-size: 15px;
+	}
+
+.wrapper{
+	margin: 0 auto;
+	width: 80%;
+}
+
+section{
+	position: relative;
+	margin-bottom: 45em;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+p{
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+nav{
+	height: 2.8em;
+	background: black;
+	position: relative;
+	text-transform: uppercase;
+}
+
+	#nav ul{
+		padding:0;
+		margin: 0;
+		height: 100%;
+	}
+
+	#nav ul li{
+		width: 9%;
+		height: 100%;
+		display: inline-block;
+		list-style: none;
+		border-left: 2px dotted rgba(90,90,90,.7);
+		position: relative;
+	}
+
+	#nav ul .looneyLogo{
+		top: 0em;
+	}
+
+	.looneyLogo img{
+		position: absolute;
+		left: 20%;
+	}
+
+	#nav ul li:nth-of-type(7){
+		border-right: 2px dotted rgba(90,90,90,.7);
+	}
+
+	#nav a{
+		float: left;
+		color: white;
+		height: 100%;
+		width: 100%;
+		padding: 9%;
+		font-weight: 500;
+		letter-spacing: 1px;
+	}
+
+.bigButton{
+	float: right;
+	background: rgb(255,205,0);
+	height: 3em;
+	width: 25em;
+	position: relative;
+	top: 13em;
+	left: 16em;
+	color: black;
+	font-weight: 400;
+}
+
+	.bigButton:before{
+		content: "\25BA";
+		color: rgb(243,98,68);
+		font-size: 4em;
+		position: relative;
+		left: -2.8em;
+		top: -0.17em;
+	}
+
+	.bigButton:after{
+		content: "\25BA";
+		color: rgb(255,205,0);
+		font-size: 3.5em;
+		position: relative;
+		top: -1.99em;
+		left: 3.92em;
+	}
+
+
+	.bigButton div{
+		position: relative;
+		top: -2.8em;
+		left: 5%;
+		font-size: 24px;
+	}
+
+.smallButton{
+	float: right;
+	background: rgb(255,205,0);
+	height: 3em;
+	width: 12em;
+	position: relative;
+	top: 2em;
+	left: -13em;
+	color: black;
+	font-weight: 400;
+}
+
+	.smallButton:before{
+		content: "\25BA";
+		color: #9ccbaa;
+		font-size: 3.5em;
+		position: relative;
+		left: -0.1em;
+		top: -0.14em;
+	}
+
+
+	.smallButton:after{
+		content: "\25BA";
+		color: rgb(255,205,0);
+		font-size: 3.5em;
+		position: relative;
+		top: -1.82em;
+		left: 3.33em;
+	}
+
+	.smallButton div{
+		position: relative;
+		top: -2.5em;
+		left: 35%;
+		font-size: 24px;
+	}
+
+
+	.square{
+		width: 40%;
+		margin: 0 auto;
+		background: rgb(255,205,0);
+		height: 3em;
+		float: left;
+		position: relative;
+		top: 8em;
+		left: 30%;
+		text-align: center;
+		padding: 1.5%;
+		font-size: 20px;
+		
+		color: black;
+	}
+
+.introDiv{
+	width: 60%;
+	margin: 0 auto;
+	border-top: 1.5px dotted black;
+	border-bottom: 1.5px dotted black;
+	position: relative;
+	top: 5em;
+	text-align: center;
+	height: 180px;
+}
+
+/*=== TYPOGRAPHY ===*/
+
+h1{
+	font-weight: 400;
+	font-size: 60px;
+	position: relative;
+	float: right;
+	margin: 0;
+	right: 1.9em;
+}
+
+h2{
+	color: #9e9490;
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	width: 70%;
+	position: absolute;
+	float: right;
+	left: 4.5em;
+	top: 3em;
+	line-height: 30px;
+}
+
+	header h2{
+		width: 50%;
+		top: 4em;
+		left: 23em;
+		color: white;
+	}
+
+
+
+h3{
+	font-size: 48px;
+	font-weight: 400;
+	margin-top: .5em;
+	position: relative;
+}
+
+	.feature h3{
+		float: right;
+		width: 39%;
+		text-align: center;
+		top: 1.5em;
+		right: 0.8em;
+	}
+
+h4{
+
+	color: #255b68;
+	font-size: 18px;
+	font-weight: 400;
+
+}
+
+h5{
+	font-weight: 300;
+	font-size: 24px;
+	color: #3694a7;
+	position: relative;
+	top: -1em;
+	width: 80%;
+}
+
+h6{
+
+}
+
+
+
+/*====== Work Section =====*/
+
+.feature{
+	height: 590px;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+	top: 7em;
+	background: #9ccbaa;
+}
+
+	#work #mtv{
+		float: left;
+		position: absolute;
+		top: 170px;
+		left: 130px;
+		z-index: 2;
+	}
+
+	#work .feature p:nth-of-type(1){
+		float: right;
+		position: relative;
+		right: 18em;
+		top: 2em;
+		color: white;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	#work .feature p:nth-of-type(2){
+		float: right;
+		position: relative;
+		left: 25em;
+		top: 14em;
+		font-size: 18px;
+		width: 460px;
+		line-height: 26px;
+		font-weight: 200;
+		letter-spacing: 1px;
+
+	}
+
+	#work .star{
+		position: relative;
+		float: right;
+		right: 19em;
+		top: -3em;
+	}
+
+
+.column{
+	width: 33%;
+	float: left;
+	position: relative;
+	left:1.7em;
+	top: 9em;
+}
+
+.column .caption{
+	background: #f9fafa;
+	border: 1px solid #e5e7e6;
+	width: 88.8%;
+	padding-left: 5%;
+	position: relative;
+	top: -1em;
+}
+
+.caption p{
+	width: 85%;
+	line-height: 24px;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+
+/*===== NEWS =====*/
+
+#news .introDiv{
+	height: 210px;
+}
+
+#news h2{
+	width: 97%;
+	top: 4em;
+	left: 0;
+	margin: 0 auto;
+}
+
+#news .feature{
+	background: none;
+	width: 50%;
+	float: left;
+}
+
+	#news .feature p{
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 200;
+	width: 80%;
+	position: relative;
+	top: -2em;
+	}
+
+
+.secondRecent{
+	position: relative;
+	top: 7em;
+	width: 50%;
+	float: right;
+	right: 2em;
+}
+
+	.secondRecent .column p{
+		font-size: 16px;
+		font-weight: bold;
+		color:  #3694a7;
+		width: 100%;
+		position: relative;
+		top: 0em;
+	}
+
+
+	.secondRecent p{
+		font-size: 18px;
+		font-weight: 200;
+		line-height: 27px;
+		width: 80%;
+		position: relative;
+		top: -4.5em;
+	}
+
+#news .smallButton{
+	left: -24em;
+}
+
+#news .smallButton:before, #blog .smallButton:before{
+	color: white;
+}
+
+
+.read{
+	font-weight: 600;
+	font-size: 20px;
+	color: black;
+	position: relative;
+	float: left;
+	top: -2em;
+}
+
+.secondRecent .column{
+	left: -7.5em;
+	top: 0;
+	width: 26%;
+}
+
+/*==== BLOG====*/
+
+#blog{
+	position: relative;
+	top: 20em;
+}
+
+	#blog .introDiv{
+		height: 230px;
+	}
+
+	#blog h3{
+		left: 3.5em;
+	}
+
+	#blog h2{
+		width: 94%;
+		left:1.5em;
+		line-height: 30px;
+	}
+
+	#blog img:nth-of-type(1){
+		position: relative;
+		top: 8.5em;
+		left: 7em;
+	}
+
+	#blog .smallButton{
+		left: -24em;
+	}
+
+	article{
+		width: 50%;
+		float: right;
+		position: relative;
+		top: 7em;
+	}
+
+	article h5{
+		font-size: 32px;
+		font-weight: 300;
+	}
+
+	article p{
+		font-size: 14px;
+		line-height: 30px;
+		width: 80%;
+		position: relative;
+		top: -4em;
+	}
+
+	.recents{
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+
+	.recents strong{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 400;
+		top: 13em;
+		left: 7em;
+		position: relative;
+	}
+
+	.recents .column{
+		width: 30%;
+		left: 0;
+	}
+
+	.recents h4{
+		font-size: 23px;
+		font-weight: 300;
+		position: relative;
+		left: 5em;
+		top: 5em;
+	}
+
+	.recents .column p{
+		text-transform: uppercase;
+		color: gray;
+		font-weight: 200;
+		position: relative;
+		top: 7em;
+		left: 7em;
+		font-size: 16px;
+	}
+
+/*=== About ===*/
+
+#about{
+	float: left;
+}
+
+#about .introDiv{
+	top: 0;
+	height: 100px;
+}
+
+#about .column b{
+	color: #f4614c;
+}
+
+#about .column{
+	top: 2em;
+	height: 30em;
+}
+
+#about .column p{
+	width: 85%;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+#about .gear{
+	height: 30em;
+	background: url('../img/cic.png') no-repeat;
+}
+
+/*=====Network=====*/
+#network .introDiv{
+	top: 85em;
+}
+
+#network h3{
+	position: absolute;
+	width: 100%;
+}
+
+#network .introDiv h2{
+	width: 97%;
+	left: 0;
+}
+
+#network .column{
+	top: -25em;
+	text-align: center;
+}
+
+#network p{
+	width: 100%;
+	float: none;
+	line-height: 26px;
+	font-weight: 200;
+	font-size: 14px;
+}
+
+
+/*====Contact====*/
+
+#contact {
+	top: 55em;
+}
+
+#contact .introDiv{
+	height: 200px;
+}
+
+#contact .introDiv h3{
+	position: absolute;
+	width: 100%;
+}
+
+#contact .introDiv h2{
+	width: 90%;
+	left: 5%;
+}
+
+
+#contact .column{
+	position: relative;
+	top: -55em;
+}
+#contact .column h5{
+	margin: 1.5em 0 0 0;
+}
+
+#contact .column span{
+	font-weight: 200;
+	font-size: 14px;
+}
+
+#contact .column p{
+	font-family: "Gill Sans", Calibri, sans-serif;
+	font-size: 20px;
+}
+
+#contact .column p:nth-of-type(2){
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	color: gray;
+}
+
+/*=====Footer=====*/
+footer{
+	float: left;
+	margin: 0;
+	bottom: 0px;
+}
+
+footer .wrapper{
+	height: 180px;
+	position: relative;
+	bottom: 0;
+	text-align: center;
+}
+
+#tweet{
+	float: left;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	color: black;
+	position: relative;
+	top: -2em;
+}
+
+#fb{
+	text-transform: uppercase;
+	float: right;
+	font-size: 12px;
+	font-weight:600;
+	color: black;
+	position: relative;
+	top: -2em;
+}
+
+form{
+	background: white;
+	border-radius: 15px;
+	width: 30%;
+	height: 8em;
+	position: relative;
+	float: left;
+	top: 4em;
+	left: -7em;
+	text-align: center;
+}
+
+form h1{
+	text-transform: italic;
+	font-size: 20px;
+	width: 100%;
+	right: 0;
+	font-weight: 400;
+	letter-spacing: 1px;
+	top: 1em;
+}
+	input{
+		height: 3.5em;
+		width: 70%;
+		position: relative;
+		top: 3em;
+		left: 0;
+	}
+
+	form a{
+		height: 2.5em;
+		width: 2.5em;
+		border-radius: 5px;
+		float: right;
+		background: rgb(255,205,0);
+		position: relative;
+		top: 2em;
+		right: .5em;
+		padding: 3%;
+	}
+
+	#question{
+		float: left;
+		position: relative;
+		top: 5em;
+		left: 12em;
+		color: black;
+		font-size: 18px;
+	}
+
+	footer .bigButton{
+		top: 5em;
+		left: 5em;
+	}
+
+
+	footer h3, footer h2{
+		float: left;
+		width: 100%;
+		margin-top: 2em;
+	}
+
+	footer h2{
+		color: white;
+		font-size: 30px;
+		top: -3em;
+		left: 0;
+		position: relative;
+	}
+
+	footer .star{
+		position: relative;
+		top: 23em;
+		left: 1em;
+		width: 100%;
+		text-align: center;
+	}
+
+#copySection{
+	background: black;
+	width: 100%;
+	height: 5em;
+	color: gray;
+	text-transform: uppercase;
+	font-weight: 500;
+	float: left;
+	padding: .7% .5% .5% 5%;
+}
+
+
+
+#hosting{
+	float: right;
+	position: relative;
+	top: -3em;
+	margin-right: 5%;
+}
+
+#hosting p{
+	float: left;
+	display: inline-block;
+}
+
+
