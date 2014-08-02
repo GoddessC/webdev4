@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'flare_light_gothic';
     src: url('../fonts/flare-light-gothic-webfont.eot');
     src: url('../fonts/flare-light-gothic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -100,7 +100,7 @@
 }
 
 
-
+*/
 /*==== Container ====*/
 body{
     width: 100%;
@@ -227,8 +227,8 @@ header{
 
 .slide #shadow{
     position: relative;
-    right: 35.8em;
-    top: 18.5em;
+    right: 39.8em;
+    top: 20.5em;
 }
 
 .slide img:nth-of-type(2){
@@ -274,7 +274,7 @@ h2{
     }
 
     .slide button{
-        left: -35em;
+        left: -42em;
         top: 270px;
     }
 
@@ -462,7 +462,7 @@ h2{
     }
 
     #variations button{
-        left: 41em;
+        left: 51em;
         top: -2em;
     }
 
