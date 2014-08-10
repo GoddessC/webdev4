@@ -266,85 +266,19 @@ th {
   padding: 0;
 }
 
-/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1,
-body h2, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.rc.1/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 15, ../sass/screen.scss */
+/* line 8, ../sass/screen.scss */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 body {
   margin: 0 auto;
   background: black;
 }
-/* line 29, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 body h1, body h2 {
   font-size: 3em;
   width: 100%;
@@ -352,92 +286,138 @@ body h1, body h2 {
   color: #bda0cb;
   font-family: "Permanent Marker", "Helvetica Neue";
 }
-/* line 37, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 body h2 {
   font-size: 2em;
 }
-/* line 44, ../sass/screen.scss */
-body div {
+/* line 37, ../sass/screen.scss */
+body section {
   width: 100%;
   float: left;
   margin: 5em 1em;
   color: #bda0cb;
   background: rgba(189, 160, 203, 0.5);
 }
-/* line 52, ../sass/screen.scss */
-body div img {
-  float: left;
-  max-width: 50%;
-  margin-right: 1em;
+@media (min-width: 1024px) {
+  /* line 37, ../sass/screen.scss */
+  body section {
+    max-width: 100%;
+    margin: 3em 0;
+  }
 }
-@media (max-width: 900px) {
-  /* line 52, ../sass/screen.scss */
-  body div img {
+/* line 51, ../sass/screen.scss */
+body section figure {
+  position: relative;
+  float: left;
+}
+@media (max-width: 800px) {
+  /* line 51, ../sass/screen.scss */
+  body section figure {
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 51, ../sass/screen.scss */
+  body section figure {
+    width: 40%;
+  }
+}
+/* line 64, ../sass/screen.scss */
+body section figure img {
+  float: left;
+  max-width: 100%;
+}
+@media (max-width: 800px) {
+  /* line 64, ../sass/screen.scss */
+  body section figure img {
     max-width: 100%;
   }
 }
-/* line 62, ../sass/screen.scss */
-body div p {
-  width: 45%;
-  float: left;
+/* line 75, ../sass/screen.scss */
+body section p {
+  width: 90%;
+  float: right;
   font-family: "Indie Flower", arial;
   font-size: 18px;
   line-height: 30px;
   text-indent: 20px;
   color: white;
   letter-spacing: 2px;
-  margin: 2em 0 0;
+  margin: 1em 2em;
 }
-@media (max-width: 900px) {
-  /* line 62, ../sass/screen.scss */
-  body div p {
-    width: 90%;
-    margin: 2em 5%;
+/* line 86, ../sass/screen.scss */
+body section p:nth-of-type(2) {
+  width: 90%;
+}
+@media (min-width: 1024px) {
+  /* line 86, ../sass/screen.scss */
+  body section p:nth-of-type(2) {
+    width: 45%;
   }
 }
-/* line 81, ../sass/screen.scss */
-body ul {
+@media (max-width: 800px) {
+  /* line 75, ../sass/screen.scss */
+  body section p {
+    width: 90%;
+    margin: 2em 5%;
+    font-variant: word;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 75, ../sass/screen.scss */
+  body section p {
+    width: 45%;
+  }
+}
+/* line 106, ../sass/screen.scss */
+body section ul {
   width: 30%;
-  float: none;
-  margin: 0 35%;
+  float: left;
+  margin: 0 7%;
   font-size: 20px;
   color: #bda0cb;
   font-family: "Indie Flower", arial;
 }
-/* line 89, ../sass/screen.scss */
-body ul li {
-  width: 15%;
+@media (max-width: 800px) {
+  /* line 106, ../sass/screen.scss */
+  body section ul {
+    margin: 0 30%;
+  }
+}
+/* line 118, ../sass/screen.scss */
+body section ul li {
+  width: 44%;
   line-height: 11px;
-  margin: 1em auto;
+  margin: 1em 3em;
   list-style-type: circle;
   color: white;
 }
-/* line 98, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 body .recommend {
   float: right;
-  text-align: center;
 }
-/* line 102, ../sass/screen.scss */
-body .recommend img {
-  max-width: 50%;
+/* line 134, ../sass/screen.scss */
+body .recommend figure {
+  max-width: 100%;
 }
-/* line 104, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 body .recommend ul {
   float: right;
-  width: 28%;
-  margin: 1em 18%;
+  width: 67%;
+  margin: 2em -25%;
 }
-/* line 109, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 body .recommend ul li {
-  width: 45%;
+  width: 100%;
 }
-@media (max-width: 900px) {
-  /* line 113, ../sass/screen.scss */
+@media (max-width: 800px) {
+  /* line 146, ../sass/screen.scss */
   body .recommend img {
     display: none;
   }
-  /* line 114, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
   body .recommend ul {
-    margin: 1em 35%;
+    width: 30%;
+    margin: 1em 34%;
   }
 }
