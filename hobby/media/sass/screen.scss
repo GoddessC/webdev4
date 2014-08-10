@@ -1,0 +1,121 @@
+@import "normalize";
+@import "compass/reset";
+@import "breakpoint";
+
+
+
+
+$bp-smaller: (max-width 900px); 
+$fade: rgba(0,0,0,.5);
+$lavendar: #BDA0CB;
+$marker:'Permanent Marker', 'Helvetica Neue';
+$indie: 'Indie Flower', arial;
+
+
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+body{
+
+
+	margin: 0 auto;
+	background: black;
+	 
+
+	h1{
+		font-size: 3em;
+		width: 100%;
+		text-align: center;
+		color: $lavendar;
+		font-family: $marker;
+	}
+
+	h2{
+		@extend h1;
+		font-size: 2em;
+	}
+
+
+	
+	div{
+		width: 100%;
+		float: left;
+		margin: 5em 1em;
+		color: $lavendar;
+		background: rgba(189, 160, 203, .5);
+
+
+		img{
+			float: left;
+			max-width: 50%;
+			margin-right: 1em;
+
+			@include breakpoint($bp-smaller){ 
+				max-width: 100%;
+			}
+		}
+
+		p{
+			width: 45%;
+			float: left;
+			font-family: $indie;
+			font-size: 18px;
+			line-height: 30px;
+			text-indent: 20px;
+			color: white;
+			letter-spacing: 2px;
+			margin: 2em 0 0;
+
+			@include breakpoint($bp-smaller){ 	
+				width: 90%;
+				margin: 2em 5%;
+			}
+		}
+	}
+
+
+	ul{
+		width: 30%;
+		float: none;
+		margin: 0 35%;
+		font-size: 20px;
+		color: $lavendar;
+		font-family: $indie;
+
+		li{
+			width: 15%;
+			line-height: 11px;
+			margin: 1em auto;
+			list-style-type: circle;
+			color: white;
+		}
+	}
+
+	.recommend{
+		float: right;
+		text-align: center;
+
+		img{ max-width: 50%;}
+
+		ul{
+			float: right;
+			width: 28%;
+			margin: 1em 18%;
+
+			li{ width: 45%;}
+		}
+
+		@include breakpoint($bp-smaller){
+			img{ display:none;}
+			ul{margin: 1em 35%;}
+		}
+	}
+
+
+
+}
+
