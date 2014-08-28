@@ -1,0 +1,408 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+// endbower
+
+$clay-colored: #c4594e;
+$light-border: 1px solid rgba(0,0,0,.3);
+$rale:'Raleway', sans-serif;
+$hammer: 'Hammersmith One', sans-serif;
+
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    min-width: 100vh;
+    color: black;
+    overflow-x: hidden;
+    @include gradient-vertical($start-color: rgba(196,89,78, 0) , $end-color: rgba(196,89,78,1));
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgba(255,139, 127,.01);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: $hammer;
+    font-size: 1.5em !important;
+    font-weight: 100;
+}
+
+p,a,button{
+    font-size: 17px ;
+    font-family:  $rale;
+}
+
+a{
+    color: black;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.btn-info,
+.btn-info:hover{
+    background-color: $clay-colored;
+    border-color: brown;
+}
+
+.container{
+    border: none;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+
+    .pull-left{
+        left: -34em;
+        width: 12%;
+    }
+    
+    .col-md-8{
+        margin: -1.6em -6em 0 0;
+    }
+
+    button{
+        border: 0;
+    }
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 1em;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+
+    .row{
+        margin-bottom: 0;
+    }
+
+    .form-inline{
+        left:1.6%;
+        top: 1em;
+        
+
+        span{
+            padding: 6%;
+            border-radius: 6px;
+            top: -3.3em;
+            left: 0em;
+        }
+    }
+
+    div.col-sm-8{
+        left: 1.4%;
+    }
+}
+
+.nav{
+    color: black !important;
+}
+    
+.row{
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+
+.carousel{
+    height: 87vh; 
+    width: 100vw;
+    margin-bottom: 3em;
+    padding: 0;
+    border: none;
+    position: relative;
+    left: -9.5em;
+
+    .carousel-inner{
+        padding: 0;
+        height: 100%;
+    }
+
+    .item,
+    img{
+        @extend .carousel-inner;
+
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: -.5em;
+        left: 29.4%;
+        z-index: 15;
+        width: 100%;
+        padding-left: 0;
+        margin-left: -30%;
+        text-align: center;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin:  0 2px;
+            text-indent: -999px;
+            width: 3em;
+            height: 3em;
+            cursor: pointer;
+            background-color: #000 \9;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid $clay-colored;
+            border-radius: 0;
+            
+            &.active {
+                width: 3em;
+                height: 3em;
+                margin: 0;
+                background-color: $clay-colored;
+            }
+        }
+
+    }
+
+  
+
+    .carousel-control{
+        visibility: hidden;
+
+        span{
+            color: $clay-colored;
+            opacity: 1;
+        }    
+    }
+
+}
+
+.featureFour{
+
+    margin-bottom: 4em;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+
+    .feature{
+       height: 22em;
+       border-bottom-right-radius: 2px;
+       border-bottom-left-radius: 2px;
+       background: rgba(204,204,204,1);
+
+       p,ul{
+        padding: 2% 7%;
+       }
+
+       h3{
+        background-color: #AA4D44;
+        color: white;
+        margin: 0;
+        z-index: 300;
+        letter-spacing: 1px;
+       }
+        
+        li{
+            list-style: none;
+            padding:2%;
+        }
+
+    }
+}
+
+.more{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+
+}
+
+
+.panel-heading{
+    border: $light-border;
+    padding: 10px 0 30px 0;
+    color: white;
+    background-color: #AA4D44;
+    
+}
+
+.extras{
+    border-left: $light-border;
+    border-right: $light-border;
+    margin-bottom: 0;
+    background: rgba(204,204,204,1);
+
+    .extra{
+        padding:2%;
+        border: $light-border;
+        border-left: none;
+        border-right: none;
+        height: 20em;
+    }
+
+    button{
+        @extend .more;
+        bottom: .5em;
+    }
+    
+    
+}
+
+.signup {
+
+    background: rgba(204,204,204,1);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    .col-sm-12{
+        border-top: none;
+        border-left: $light-border;
+        border-right: $light-border;
+        border-bottom: $light-border;
+        height: 15.5em;
+    }
+
+    .social{
+        border-right: $light-border;
+        border-bottom: $light-border;
+        height: 15.5em;
+        
+    }
+}
+
+/* Custom page footer */
+.footer {
+    color: white;
+    background: rgba(204,204,204,1);
+
+    h1{
+        a{
+            font-size: 1em !important;
+        }
+    }
+
+    ul{
+    
+        padding: 0 4%;
+
+        li{
+            list-style: none;
+        }
+    }
+}
+
+li{
+    a{
+        color: $clay-colored;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 0;
+    }
+
+        /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer,
+    .feature {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-top: -1.5em;
+        height: 10em;
+        margin-bottom: 30px;
+
+        .col-md-3{
+            border-bottom-right:0px;
+            border-bottom-left:0px;
+        }
+    }
+
+    /*=NAV=*/
+    .navbar-collapse{
+        margin-bottom: 0 !important;
+    }
+
+
+
+    /*--- Carousel  ---*/
+
+    .carousel{
+    
+        .carousel-indicators li,
+        .carousel-indicators li.active{
+            width: 2em;
+            height: 2em;
+        }
+    }
+
+    .feature{
+        
+        margin-bottom: 2em;
+
+        p,ul{
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            padding: 5px 2%;
+        }
+    }
+
+    .signup {
+
+        form{ 
+            button{
+                padding: 5px 0;
+                margin-top: -3.5em;
+                margin-left: -1px;
+            }
+        }
+
+        .social{
+            .row{
+                margin-bottom: 1.75em !important;
+            }
+        }
+    }
+
+
+}
+
+
+//Small Screen Nav Toggle
+
+.navmenu-fixed-left{
+
+    ul{
+        position: absolute;
+        left: -13em;
+    }
+}
+
+
