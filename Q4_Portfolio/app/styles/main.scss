@@ -1,0 +1,226 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+// endbower
+
+a{
+    float: left;
+    color: teal !important;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+        background-color: none !important;
+    }
+}
+
+.divider{
+    background: teal;
+}
+
+    
+nav{
+
+    float: left;
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0;
+    height: auto;
+    background:linear-gradient(#3D4246,#24282B);
+
+    .container-fluid{
+        padding: 0;
+    }
+
+    ul{
+
+        border-radius:4px;
+        color: silver;
+        
+
+        li{
+
+            text-align:center;
+            color: teal;
+            cursor:pointer;
+            position: relative;
+            background: linear-gradient(#44494F,#2F3237);
+            border-radius:3px;
+            border-right:1px solid #0F1014;
+            border-bottom:1px solid #0F1014;
+            border-top:1px solid #53575C;
+            border-left:1px solid #53575C;
+            box-shadow:1px 1px #17191C;
+
+            &:hover{
+                background:#2A2D31;
+                box-shadow: inset 0 0 5px 2px rgba(15, 16, 20, 0.5);
+                border:1px solid #0F1014;
+            }
+
+            a{
+                width: 100%;
+                height: 100%;
+
+                &:active{
+                    text-shadow:1px 1px 5px teal;
+                }
+                &:hover{
+                    color: gray;
+                    background:#2A2D31;
+                    box-shadow: inset 0 0 5px 2px rgba(15, 16, 20, 0.5);
+                    border:1px solid #0F1014;
+                    text-shadow:1px 1px 7px teal;
+                }
+            }
+        }
+
+        .stage {
+            display: inline-block;
+            border-radius: 50%;
+            height: 5em;
+            width: 5em;
+            perspective: 1200px;
+            position: absolute;
+            z-index: 11;
+            perspective-origin: 50% 50%;
+
+            .eye {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                border-radius: 50%;
+                position: relative;
+                background: radial-gradient(circle at 50% 120%, silver, white 80%, silver 100%);
+                -webkit-animation: blink 3s infinite 4s;
+
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+                    border-radius: 50%;
+                    bottom: 2.5%;
+                    left: 5%;
+                    opacity: 0.6;
+                    height: 100%;
+                    width: 90%;
+                    filter: blur(5px);
+                    z-index: 2;
+                }
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    float: left;
+                    top: 100%;
+                    left: 80%;
+                    border-radius: 50%;
+                    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+                    transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+                    filter: blur(10px);
+                }
+
+                #yny {
+                    width: 5em; 
+                    height: 5em;
+                    background: #fff;
+                    border-color: #000;
+                    border-style: solid;
+                    border-width: 2px 2px 50px 2px;
+                    border-radius: 100%;
+                    position: absolute;
+                    opacity: 0;
+                }
+                #yny:before {
+                    content: "";
+                    position: absolute;
+                    top: 30%;
+                    left: 0;
+                    background: #fff;
+                    border: 18px solid #000;
+                    border-radius: 100%;
+                    width: 7px;
+                    height: 7px;
+                }
+                #yny:after {
+                    content: "";
+                    position: absolute;
+                    top: 55%;
+                    left: 44%;
+                    background: #000;
+                    border: 18px solid #fff;
+                    border-radius:100%;
+                    width: 7px;
+                    height: 7px;
+                }
+
+                .shadow{
+                    position: absolute;
+                    width: 10em;
+                    height: 3em;
+                    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+                    transform: rotateX(86deg) translateZ(-150px);
+                    z-index: -1;            
+                    float: left;
+                    top: -5.5em;
+                    right: -2.5em;
+                }
+
+                #iris {
+                    width: 40%;
+                    height: 40%;
+                    margin: 30%;
+                    border-radius: 50%;
+                    background: radial-gradient(circle at 50% 50%, teal 0%, #6FBE6F 30%, teal 100%);
+                    position: relative;
+                    right: 0em;
+                    float: left;
+                    
+                    &:before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 37.5%;
+                        height: 37.5%;
+                        border-radius: 50%;
+                        top: 31.25%;
+                        left: 31.25%;
+                        background: black;
+                    }
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 31.25%;
+                        height: 31.25%;
+                        border-radius: 50%;
+                        top: 18.75%;
+                        left: 18.75%;
+                        background: rgba(255, 255, 255, 0.2);
+                    }
+                }//iris
+            }//eye
+        } //stage
+
+
+    }//ul
+}//nav
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    body,
+    .container {
+        float: left;
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+}

@@ -1,0 +1,39 @@
+// bower:scss
+// endbower
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    counter-reset: heading-counter;
+}
+
+
+.container {
+    h3 {
+        counter-increment: heading-counter;
+        &:before {
+            content: counter(heading-counter) '. ';
+        }
+    }
+
+    &.south-park {
+        figure {
+            float: left;
+        }
+    }
+    .bubble {
+        border: solid 2px #f60;
+        background: #ffc;
+        padding: 20px;
+        margin: 0 auto;
+        display: inline-block;
+
+    }
+
+    .date {
+        display: block;
+        font-style: italic;
+        font-size: 80%;
+    }
+}

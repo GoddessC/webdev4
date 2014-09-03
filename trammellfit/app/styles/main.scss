@@ -1,0 +1,91 @@
+ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+
+$Open: 'Open Sans', Helvetica, sans-serif;
+
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    background: black;
+    counter-reset: heading-counter;
+}
+
+
+.container {
+    h3 {
+        counter-increment: heading-counter;
+        &:before {
+            content: counter(heading-counter) '. ';
+        }
+    }
+
+    &.fitImages {
+        figure {
+            float: left;
+        }
+    }
+    .bubble {
+        border: solid 2px teal;
+        background: rgba(0,0,0,.5);
+        height: 10em;
+        width: 20%;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        color: white;
+        z-index: 300000;
+        text-align: center;
+
+
+    }
+}
+
+.fitImages{
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    width: 20em;
+    height: 20em;
+    float: left;
+    margin: 5px;
+}
+
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+
+h1{
+    font-variant: small-caps;
+    text-align: center;
+    font-family: $Open;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: $Open;
+}
+
+
+
+    
